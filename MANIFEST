@@ -2,5 +2,4 @@
 setup.cfg
 setup.py
 dathostpython\__init__.py
-dathostpython\asdsadasd.py
 dathostpython\wrapper.py
