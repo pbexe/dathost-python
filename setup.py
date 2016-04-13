@@ -1,8 +1,8 @@
 from distutils.core import setup
 setup(
-  name = 'dathost-python',
-  packages = ['dathost-python'],
-  version = '0.1',
+  name = 'dathostpython',
+  packages = ['dathostpython'],
+  version = '0.2',
   description = 'A python wrapper for the Dathost API',
   author = 'Miles Budden',
   author_email = 'miles@budden.net',
