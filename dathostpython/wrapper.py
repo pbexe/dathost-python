@@ -31,8 +31,8 @@ class dathost:
         data = requests.get('https://dathost.net/api/0.1/game-servers/' + _id, auth=requests.auth.HTTPBasicAuth(self.user, self.passw))
         return json.loads(data.text)
     def edit(self, _id, **kwargs):
+        parameters = {}
         for key in kwargs:
-            kwargs[key.replace("__", ".")] = kwargs[key]
-            del kwargs[key]
-        data = requests.put('https://dathost.net/api/0.1/game-servers/' + _id, data=kwargs, auth=requests.auth.HTTPBasicAuth(self.user, self.passw))
+            parameters[key.replace("__", ".")] = kwargs[key]
+        data = requests.put('https://dathost.net/api/0.1/game-servers/' + _id, data=parameters, auth=requests.auth.HTTPBasicAuth(self.user, self.passw))
         return data

@@ -38,4 +38,13 @@ dathost.getFile("server id", "path/to/file.txt")
 
 # Retrieve info on a server
 print(dathost.info("server id"))
+
+# Edit a server value
+# Multiple values can be passed, for example:
+# dathost.edit("570e1dadcde5f5xxxxxxxxxx", csgo_settings__rcon = "Bob", name = "Bob")
+# 
+# Note:
+# For parameters with "." in them, replace the "." with "__".
+dathost.edit("server id", parameter = "value" )
+
 ```
