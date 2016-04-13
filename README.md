@@ -2,6 +2,12 @@
 
 This is a python wrapper for the dathost API.
 
+##Installation
+
+```python
+pip3 install dathostpython
+```
+
 ##Basic usage
 
 ```python
