@@ -36,3 +36,18 @@ class dathost:
             parameters[key.replace("__", ".")] = kwargs[key]
         data = requests.put('https://dathost.net/api/0.1/game-servers/' + _id, data=parameters, auth=requests.auth.HTTPBasicAuth(self.user, self.passw))
         return data
+    def files(self, _id, path, hide_default=False, show_filesizes=False):
+        if hide_default == False:
+            hide_default = "false"
+        else:
+            hide_default = "true"
+        if show_filesizes == False:
+            show_filesizes = "false"
+        else:
+            show_filesizes = "true"
+        payload = {'hide_default_files': hide_default, 'with_filesizes': show_filesizes, 'path':path}
+        data = requests.get('https://dathost.net/api/0.1/game-servers/' + _id + "/files", params=payload, auth=requests.auth.HTTPBasicAuth(self.user, self.passw))
+        return data.text
+    def sync(self, _id):
+        data = requests.get('https://dathost.net/api/0.1/game-servers/' + _id + '/sync-files', auth=requests.auth.HTTPBasicAuth(self.user, self.passw))
+        return json.loads(data.text)

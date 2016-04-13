@@ -48,4 +48,10 @@ print(dathost.info("server id"))
 # A full list of parameters can be found at https://dathost.net/api#!/default/put_game_server_item
 dathost.edit("server id", parameter = "value" )
 
+# List files in a directory
+# The final 2 parameters (Hide default files and show file sizes) are optional
+dathost.files("server id", "path/to/dir/", True, True)
+
+# Sync the files between the local cache and the gameserver
+dathost.sync("server id")
 ```
