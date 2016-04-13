@@ -45,6 +45,7 @@ print(dathost.info("server id"))
 # 
 # Note:
 # For parameters with "." in them, replace the "." with "__".
+# A full list of parameters can be found at https://dathost.net/api#!/default/put_game_server_item
 dathost.edit("server id", parameter = "value" )
 
 ```
