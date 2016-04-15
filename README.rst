@@ -1,5 +1,16 @@
 Dathost-python
 ==============
+.. image:: https://img.shields.io/github/issues/pbexe/dathost-python.svg
+    :target: https://github.com/pbexe/dathost-python/issues
+
+.. image:: https://badge.fury.io/py/dathostpython.svg
+    :target: https://badge.fury.io/py/dathostpython
+
+.. image:: https://img.shields.io/pypi/dm/dathostpython.svg
+    :target: https://pypi.python.org/pypi?name=dathostpython&:action=display
+
+
+
 
 This is a python wrapper for the dathost API.
 
