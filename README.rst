@@ -6,9 +6,6 @@ Dathost-python
 .. image:: https://badge.fury.io/py/dathostpython.svg
     :target: https://badge.fury.io/py/dathostpython
 
-.. image:: https://img.shields.io/pypi/dm/dathostpython.svg
-    :target: https://pypi.python.org/pypi?name=dathostpython&:action=display
-
 
 
 
