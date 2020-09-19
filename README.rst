@@ -1,3 +1,12 @@
+
+DEPRECATION WARNING
+===================
+This repo is no longer maintained.
+
+Please use this more up to date project: https://github.com/WardPearce/dathost
+
+
+
 Dathost-python
 ==============
 .. image:: https://img.shields.io/github/issues/pbexe/dathost-python.svg
